@@ -1,7 +1,7 @@
 <?php
 	use PHPMailer\PHPMailer\PHPMailer;
-	require "PHPMailer/PHPMailer.php";
-	require "PHPMailer/Exception.php";
+	use PHPMailer\PHPMailer\SMTP;
+	use PHPMailer\PHPMailer\Exception;
 
 	// if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 	// 	header('Location: index.php');
