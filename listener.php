@@ -30,7 +30,7 @@
 		if ($item == "wordpressPlugin" && $currency == "USD" && $paymentStatus == "Completed" && $price == 67) {
 			$mail = new PHPMailer();
 
-			$mail->setFrom("your-email@hotmail.com", "Sales");
+			$mail->setFrom("Sidhp.09@gmail.com", "Sales");
 			$mail->addAttachment("attachments/webfeature.zip", "Webfeature");
 			$mail->addAddress($cEmail, $name);
 			$mail->isHTML(true);
