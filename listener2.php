@@ -2,6 +2,9 @@
  use PHPMailer\PHPMailer\PHPMailer;
  use PHPMailer\PHPMailer\SMTP;
  use PHPMailer\PHPMailer\Exception;
+
+ require 'vendor/autoload.php';
+ $mail = new PHPMailer(true);
 //
 // I feel there are never too many comments in code.  Maybe it's just me.
 //

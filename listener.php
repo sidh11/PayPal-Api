@@ -3,6 +3,9 @@
 	use PHPMailer\PHPMailer\SMTP;
 	use PHPMailer\PHPMailer\Exception;
 
+	require 'vendor/autoload.php';
+	$mail = new PHPMailer(true);
+
 	// if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 	// 	header('Location: index.php');
 	// 	exit();
