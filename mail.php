@@ -31,8 +31,9 @@ try {
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Let`s talk about making project`s profitable';
-    $mail->Body    = '<h2>ContactUs</h2>';
+    $mail->Subject = 'paypal payment receipt';
+    $mail->Body    = '<h2>Receipt to John Smith</h2>';
+    $mail->Body    =  'Thank your for purchasing the things from the Website';
    // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
