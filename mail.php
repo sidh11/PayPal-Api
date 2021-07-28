@@ -3,39 +3,26 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-
-
-// $name = $_POST['name']; 
-// $email = $_POST['email']; 
-// $service = $_POST['service']; 
-// $Phone_no = $_POST['Phone_no']; 
-// $state = $_POST['state']; 
-// $district = $_POST['District']; 
-// $message = $_POST['message']; 
-
-
-
+require 'vendor/autoload.php';
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
 try {
+   
     //Server settings
     //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
     $mail->isSMTP();                                            // Send using SMTP
     $mail->Host       = ' smtp.gmail.com';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'bhupendrabanothe@gmail.com';                     // SMTP username
-    $mail->Password   = 'pegqzsurprcbpffy';                               // SMTP password
+    $mail->Username   = 'nottysid@gmail.com';                     // SMTP username
+    $mail->Password   = 'wgnkzqevgcfuspya';                               // SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
     $mail->setFrom('sidhp.09@gmail.com', 'siddharth');
     $mail->addAddress('Siddharth.patel39@gmail.com', 'sid');     // Add a recipient
-  //  $mail->addAddress('ellen@example.com');               // Name is optional
-    // $mail->addReplyTo('info@wer4u.in', 'Information');
-   // $mail->addCC('cc@example.com');
-    //$mail->addBCC('bcc@example.com');
+  
 
     // Attachments
    // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
