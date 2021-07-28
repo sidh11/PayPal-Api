@@ -29,7 +29,8 @@
 		$item = $_POST['item_number'];
 		$paymentStatus = $_POST['payment_status'];
 
-		if ($paymentStatus == "Completed" ) {
+		//if ($paymentStatus == "Completed" ) 
+		
 			try {
    
 				//Server settings
@@ -81,5 +82,5 @@
 
 		// 	$mail->send();
 		}
-	}
+	
 ?>
