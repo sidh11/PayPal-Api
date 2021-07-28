@@ -31,7 +31,7 @@
 			$mail = new PHPMailer();
 
 			$mail->setFrom("your-email@hotmail.com", "Sales");
-			$mail->addAttachment("attachment/wenfeature.zip", "Webfeature");
+			$mail->addAttachment("attachments/wenfeature.zip", "Webfeature");
 			$mail->addAddress($cEmail, $name);
 			$mail->isHTML(true);
 			$mail->Subject = "Your Purchase Details";
