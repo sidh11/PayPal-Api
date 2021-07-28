@@ -12,4 +12,5 @@ $ch = curl_init();
 	curl_setopt($ch, CURLOPT_POSTFIELDS, "cmd=_notify-validate&" . http_build_query($_POST));
 	$response = curl_exec($ch);
 	curl_close($ch);
+    file_put_contents(filename:"test.txt", $response)
 <?>
