@@ -54,7 +54,7 @@
 				$mail->isHTML(true);                                  // Set email format to HTML
 				$mail->Subject = 'Your Purchase Details Invoice Number:' + $invoice;
 				$mail->Body    = '<h2>Hi, <br><br>
-				// 		Thank you for purchase.' + $name + '</h2>';
+						Thank you for purchase.' + $name + '</h2>';
 			   // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 			
 				$mail->send();
