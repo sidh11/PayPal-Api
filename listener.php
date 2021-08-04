@@ -41,8 +41,7 @@
 				Amazing WordPress Plugin.<br><br>
 				
 				Kind regards,
-				My Name
-			";
+				My Name";
 
 			$mail->send();
 		}
