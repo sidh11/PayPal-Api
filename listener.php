@@ -18,7 +18,7 @@
 	$response = curl_exec($ch);
 	curl_close($ch);
 
-	if ($response == "VERIFIED" && $_POST['receiver_email'] == "your-email@hotmail.com") {
+	if ($response == "VERIFIED" && $_POST['receiver_email'] == "Sidhp.09@gmail.com") {
 		$cEmail = $_POST['payer_email'];
 		$name = $_POST['first_name'] . " " . $_POST['last_name'];
 
@@ -30,7 +30,7 @@
 		if ($item == "wordpressPlugin" && $currency == "USD" && $paymentStatus == "Completed" && $price == 67) {
 			$mail = new PHPMailer();
 
-			$mail->setFrom("your-email@hotmail.com", "Sales");
+			$mail->setFrom("sidhp.09@gmail.com", "Sales");
 			$mail->addAttachment("attachment/wordpress-plugin.zip", "WordPress Plugin");
 			$mail->addAddress($cEmail, $name);
 			$mail->isHTML(true);
